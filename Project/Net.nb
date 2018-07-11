@@ -1,0 +1,95 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3029,         87]
+NotebookOptionsPosition[      2627,         72]
+NotebookOutlinePosition[      2984,         88]
+CellTagsIndexPosition[      2941,         85]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"embeddingLayer", "=", 
+   RowBox[{
+   "NetModel", "[", 
+    "\"\<GloVe 200-Dimensional Word Vectors Trained on Tweets\>\"", "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.740077907452148*^9, 3.740077925967845*^9}, {
+  3.740081705769402*^9, 3.7400817323498163`*^9}},
+ CellLabel->
+  "In[115]:=",ExpressionUUID->"e46d25a6-8a25-4df7-a04c-212ee133d5bc"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"net", "=", 
+   RowBox[{"NetChain", "[", 
+    RowBox[{
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{"embeddingLayer", ",", "\[IndentingNewLine]", 
+       RowBox[{"LongShortTermMemoryLayer", "[", "100", "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"NetBidirectionalOperator", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"LongShortTermMemoryLayer", "[", "40", "]"}], ",", 
+          RowBox[{"GatedRecurrentLayer", "[", "40", "]"}]}], "}"}], "]"}], 
+       ",", "\[IndentingNewLine]", 
+       RowBox[{"NetBidirectionalOperator", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"LongShortTermMemoryLayer", "[", "20", "]"}], ",", 
+          RowBox[{"GatedRecurrentLayer", "[", "20", "]"}]}], "}"}], "]"}], 
+       ",", "\[IndentingNewLine]", 
+       RowBox[{"LongShortTermMemoryLayer", "[", "10", "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"NetMapOperator", "[", 
+        RowBox[{"LinearLayer", "[", "3", "]"}], "]"}], ",", 
+       RowBox[{"SoftmaxLayer", "[", 
+        RowBox[{"\"\<Input\>\"", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Varying\>\"", ",", "3"}], "}"}]}], "]"}]}], "}"}], ",", 
+     RowBox[{"\"\<Output\>\"", "->", 
+      RowBox[{"NetDecoder", "[", 
+       RowBox[{"{", 
+        RowBox[{"\"\<Class\>\"", ",", 
+         RowBox[{"{", 
+          RowBox[{"\"\<a\>\"", ",", "\"\<b\>\"", ",", "\"\<c\>\""}], "}"}]}], 
+        "}"}], "]"}]}]}], "\[IndentingNewLine]", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.740074903112032*^9, 3.7400749040273647`*^9}},
+ CellLabel->
+  "In[116]:=",ExpressionUUID->"4931c435-7abc-4283-8c1c-86ad5d2ce3e8"]
+},
+WindowSize->{808, 699},
+WindowMargins->{{153, Automatic}, {-212, Automatic}},
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 387, 10, 30, "Input",ExpressionUUID->"e46d25a6-8a25-4df7-a04c-212ee133d5bc"],
+Cell[948, 32, 1675, 38, 233, "Input",ExpressionUUID->"4931c435-7abc-4283-8c1c-86ad5d2ce3e8"]
+}
+]
+*)
+

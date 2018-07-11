@@ -1,0 +1,892 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     37584,        882]
+NotebookOptionsPosition[     36056,        847]
+NotebookOutlinePosition[     36411,        863]
+CellTagsIndexPosition[     36368,        860]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ResourceSearch", "[", "\"\<Novels\>\"", "]"}], "[", 
+  RowBox[{"[", "1", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.739785910268899*^9, 3.7397859245596323`*^9}, {
+  3.739786011388459*^9, 3.739786014553884*^9}, {3.73978605652162*^9, 
+  3.739786057060049*^9}},
+ CellLabel->"In[57]:=",ExpressionUUID->"e1fb6a1e-9e9c-4c18-b0bf-26aeccac1f9b"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["ResourceObject",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquarePlusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            GraphicsBox[{
+              Thickness[0.011111111111111112`], 
+              StyleBox[{
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{3.789, 
+                 7.266}, {86.20700000000001, 7.266}, {86.20700000000001, 
+                 3.266}, {3.789, 3.266}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{14.129,
+                  54.07}, {19.878999999999998`, 54.07}, {19.878999999999998`, 
+                 15.57}, {14.129, 15.57}}}]}, 
+               FaceForm[
+                RGBColor[0.648987, 0.648987, 0.648987, 1.]], StripOnInput -> 
+               False], 
+              StyleBox[{
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{24.129,
+                  41.82}, {29.879, 41.82}, {29.879, 15.57}, {24.129, 
+                 15.57}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                 33.160000000000004`, 54.07}, {38.910000000000004`, 54.07}, {
+                 38.910000000000004`, 15.57}, {33.160000000000004`, 15.57}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{42.191,
+                  31.781}, {47.941, 31.781}, {47.941, 15.569999999999997`}, {
+                 42.191, 15.569999999999997`}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                 51.223000000000006`, 46.875}, {56.973000000000006`, 
+                 46.875}, {56.973000000000006`, 15.57}, {51.223000000000006`, 
+                 15.57}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{60.254,
+                  37.707}, {66.00399999999999, 37.707}, {66.00399999999999, 
+                 15.569999999999997`}, {60.254, 15.569999999999997`}}}]}, 
+               FaceForm[
+                RGBColor[0.274612, 0.618881, 0.810913, 1.]], StripOnInput -> 
+               False], 
+              StyleBox[{
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                 70.12899999999999, 54.07}, {75.87899999999999, 54.07}, {
+                 75.87899999999999, 15.57}, {70.12899999999999, 15.57}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                 9.879000000000001, 60.547}, {24.129, 60.547}, {24.129, 
+                 56.547}, {9.879000000000001, 56.547}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{9.871, 
+                 13.097999999999999`}, {80.121, 13.097999999999999`}, {80.121,
+                  9.097999999999999}, {9.871, 9.097999999999999}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                 65.87899999999999, 60.547}, {80.12899999999999, 60.547}, {
+                 80.12899999999999, 56.547}, {65.87899999999999, 56.547}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 
+                  0}, {0, 1, 0}, {0, 1, 0}}}, {{{11.469000000000001`, 
+                  66.54700000000001}, {45., 82.418}, {78.398, 
+                  66.54700000000001}}, {{45., 86.73400000000001}, {
+                  2.2230000000000003`, 66.54700000000001}, {
+                  2.2230000000000003`, 62.547}, {87.777, 62.547}, {87.777, 
+                  66.54700000000001}}}]}, 
+               FaceForm[
+                RGBColor[0.648987, 0.648987, 0.648987, 1.]], StripOnInput -> 
+               False]}, AspectRatio -> 1, Axes -> False, Background -> None, 
+             Frame -> None, FrameTicks -> None, ImageSize -> {Automatic, 
+               Dynamic[
+               3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification]), ImageSizeCache -> {45., {0., 9.}}]}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TemplateBox[{"\"Crime and Punishment\"", "\" \"", 
+                    
+                    TemplateBox[{
+                    "\"\[RightGuillemet]\"", 
+                    "https://resources.wolframcloud.com/DataRepository/\
+resources/Crime-and-Punishment"}, "HyperlinkURL"]}, "RowDefault"], 
+                  "SummaryItem"]}], 
+               TagBox["\"\"", "SummaryItem"]}, {
+               RowBox[{
+                 TagBox["\"Type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"DataResource\"", "SummaryItem"]}], 
+               "\[SpanFromLeft]"}, {
+               RowBox[{
+                 TagBox["\"Description: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                 "\"Plaintext for Fyodor Dostoevsky's \\\"Crime and \
+Punishment\\\"\"", "SummaryItem"]}], "\[SpanFromLeft]"}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquareMinusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            GraphicsBox[{
+              Thickness[0.011111111111111112`], 
+              StyleBox[{
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{3.789, 
+                 7.266}, {86.20700000000001, 7.266}, {86.20700000000001, 
+                 3.266}, {3.789, 3.266}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{14.129,
+                  54.07}, {19.878999999999998`, 54.07}, {19.878999999999998`, 
+                 15.57}, {14.129, 15.57}}}]}, 
+               FaceForm[
+                RGBColor[0.648987, 0.648987, 0.648987, 1.]], StripOnInput -> 
+               False], 
+              StyleBox[{
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{24.129,
+                  41.82}, {29.879, 41.82}, {29.879, 15.57}, {24.129, 
+                 15.57}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                 33.160000000000004`, 54.07}, {38.910000000000004`, 54.07}, {
+                 38.910000000000004`, 15.57}, {33.160000000000004`, 15.57}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{42.191,
+                  31.781}, {47.941, 31.781}, {47.941, 15.569999999999997`}, {
+                 42.191, 15.569999999999997`}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                 51.223000000000006`, 46.875}, {56.973000000000006`, 
+                 46.875}, {56.973000000000006`, 15.57}, {51.223000000000006`, 
+                 15.57}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{60.254,
+                  37.707}, {66.00399999999999, 37.707}, {66.00399999999999, 
+                 15.569999999999997`}, {60.254, 15.569999999999997`}}}]}, 
+               FaceForm[
+                RGBColor[0.274612, 0.618881, 0.810913, 1.]], StripOnInput -> 
+               False], 
+              StyleBox[{
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                 70.12899999999999, 54.07}, {75.87899999999999, 54.07}, {
+                 75.87899999999999, 15.57}, {70.12899999999999, 15.57}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                 9.879000000000001, 60.547}, {24.129, 60.547}, {24.129, 
+                 56.547}, {9.879000000000001, 56.547}}}], 
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{9.871, 
+                 13.097999999999999`}, {80.121, 13.097999999999999`}, {80.121,
+                  9.097999999999999}, {9.871, 9.097999999999999}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                 65.87899999999999, 60.547}, {80.12899999999999, 60.547}, {
+                 80.12899999999999, 56.547}, {65.87899999999999, 56.547}}}], 
+                
+                FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 
+                  0}, {0, 1, 0}, {0, 1, 0}}}, {{{11.469000000000001`, 
+                  66.54700000000001}, {45., 82.418}, {78.398, 
+                  66.54700000000001}}, {{45., 86.73400000000001}, {
+                  2.2230000000000003`, 66.54700000000001}, {
+                  2.2230000000000003`, 62.547}, {87.777, 62.547}, {87.777, 
+                  66.54700000000001}}}]}, 
+               FaceForm[
+                RGBColor[0.648987, 0.648987, 0.648987, 1.]], StripOnInput -> 
+               False]}, AspectRatio -> 1, Axes -> False, Background -> None, 
+             Frame -> None, FrameTicks -> None, ImageSize -> {Automatic, 
+               Dynamic[
+               3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification]), ImageSizeCache -> {45., {0., 9.}}]}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TemplateBox[{"\"Crime and Punishment\"", "\" \"", 
+                    
+                    TemplateBox[{
+                    "\"\[RightGuillemet]\"", 
+                    "https://resources.wolframcloud.com/DataRepository/\
+resources/Crime-and-Punishment"}, "HyperlinkURL"]}, "RowDefault"], 
+                  "SummaryItem"]}], 
+               TagBox["\"\"", "SummaryItem"]}, {
+               RowBox[{
+                 TagBox["\"Type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"DataResource\"", "SummaryItem"]}], 
+               "\[SpanFromLeft]"}, {
+               RowBox[{
+                 TagBox["\"Description: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                 "\"Plaintext for Fyodor Dostoevsky's \\\"Crime and \
+Punishment\\\"\"", "SummaryItem"]}], "\[SpanFromLeft]"}, {
+               RowBox[{
+                 TagBox["\"Categories: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   
+                   TemplateBox[{",", "\",\"", "\"Text & Literature\""}, 
+                    "RowWithSeparators"], Short], "SummaryItem"]}], ""}, {
+               RowBox[{
+                 TagBox["\"ContentTypes: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   
+                   TemplateBox[{",", "\",\"", "\"Text\""}, 
+                    "RowWithSeparators"], Short], "SummaryItem"]}], ""}, {
+               RowBox[{
+                 TagBox["\"Keywords: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   
+                   TemplateBox[{
+                    ",", "\",\"", "\"text\"", "\"novel\"", "\"fiction\"", 
+                    "\"philosophical novel\"", "\"psychological novel\""}, 
+                    "RowWithSeparators"], Short], "SummaryItem"]}], ""}, {
+               RowBox[{
+                 TagBox["\"Documentation: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  
+                  TemplateBox[{
+                   "\"https://resources.wolframcloud.com/DataRepository/\
+resources/Crime-and-Punishment\"", 
+                    "https://resources.wolframcloud.com/DataRepository/\
+resources/Crime-and-Punishment"}, "HyperlinkURL"], "SummaryItem"]}], ""}, {
+               RowBox[{
+                 TagBox["\"Data Location: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  
+                  DynamicModuleBox[{
+                   ResourceSystemClient`Private`typesetstorage$$ = 
+                    ResourceSystemClient`Private`typesetstorageLocation, 
+                    ResourceSystemClient`Private`info$$}, 
+                   DynamicBox[
+                    ToBoxes[
+                    ResourceSystemClient`Private`info$$ = 
+                    ResourceSystemClient`Private`resourceInfo[
+                    "378281a5-9126-420c-9d5e-6796f465a7bf"]; If[
+                    AssociationQ[ResourceSystemClient`Private`info$$], 
+                    ResourceSystemClient`Private`typesetstorage$$[
+                    Lookup[
+                    ResourceSystemClient`Private`info$$, 
+                    "ContentElementLocations", None]], 
+                    Missing["NotAvailable"]], StandardForm]], 
+                   DynamicModuleValues :> {}], "SummaryItem"]}], ""}, {
+               RowBox[{
+                 TagBox["\"UUID: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                 "\"378281a5-9126-420c-9d5e-6796f465a7bf\"", "SummaryItem"]}],
+                ""}, {
+               RowBox[{
+                 TagBox["\"Version: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"1.0.0\"", "SummaryItem"]}], ""}, {
+               RowBox[{
+                 TagBox["\"Size: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  
+                  TemplateBox[{
+                   "1130.512`", "\"kB\"", "kilobytes", "\"Kilobytes\""}, 
+                   "Quantity", SyntaxForm -> Mod], "SummaryItem"]}], ""}, {
+               RowBox[{
+                 TagBox["\"Elements: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   
+                   TemplateBox[{",", "\",\"", "\"Plaintext\""}, 
+                    "RowWithSeparators"], Short[#, 2]& ], "SummaryItem"]}], 
+               ""}}, GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  ResourceObject[
+   Association[
+   "Name" -> "Crime and Punishment", "UUID" -> 
+    "378281a5-9126-420c-9d5e-6796f465a7bf", "ResourceType" -> "DataResource", 
+    "Version" -> "1.0.0", "Description" -> 
+    "Plaintext for Fyodor Dostoevsky's \"Crime and Punishment\"", 
+    "RepositoryLocation" -> 
+    URL["https://www.wolframcloud.com/objects/resourcesystem/api/1.0"], 
+    "ContentSize" -> Quantity[1130.512, "Kilobytes"], 
+    "ContentElements" -> {"Plaintext"}]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{{3.739785919027734*^9, 3.739785925564557*^9}, 
+   3.739786025096664*^9, 3.739786061089285*^9},
+ CellLabel->"Out[57]=",ExpressionUUID->"b71114f8-8ab4-4451-964c-f98985e904a0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Get", "[", "%57", "]"}]], "Input",
+ CellChangeTimes->{{3.739786264941717*^9, 3.739786269577216*^9}},
+ CellLabel->"In[64]:=",ExpressionUUID->"72d3ce3d-cc73-4d15-a61b-3a7f4f09cdc7"],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   FrameBox[GridBox[{
+      {
+       ItemBox[
+        TagBox[
+         RowBox[{"\<\"PART I\\n\\n\\n\\nCHAPTER I\\n\\nOn an exceptionally \
+hot evening early in July a young man came out of\\nthe garret in which he \
+lodged in S. Place and walked slowly, as though\\nin hesitation, towards K. \
+bridge.\\n\\nHe had successfully avoided meeting his landlady on the \
+staircase. His\\ngarret was under the roof of a high, five-storied house \
+a\"\>", "\[Ellipsis]", "\<\"st him great striving, \
+great\\nsuffering.\\n\\nBut that is the beginning of a new story--the story \
+of the gradual\\nrenewal of a man, the story of his gradual regeneration, of \
+his passing\\nfrom one world into another, of his initiation into a new \
+unknown life.\\nThat might be the subject of a new story, but our present \
+story is\\nended.\"\>"}],
+         Short[#, 10]& ],
+        BaseStyle->{Deployed -> False},
+        StripOnInput->False]},
+      {GridBox[{
+         {
+          TagBox[
+           TooltipBox[
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource[
+                "FEStrings", "sizeBriefExplanation"], StandardForm],
+               ImageSizeCache->{58., {2., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLText",
+             StripOnInput->False],
+            StyleBox[
+             DynamicBox[
+              ToBoxes[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
+             False]],
+           Annotation[#, 
+            Style[
+             Dynamic[
+              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+             DynamicUpdating -> True], "Tooltip"]& ], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{50., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 64, 25741227406155030719, 10/2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{56., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{56., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 64, 25741227406155030719, 10 2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{42., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 64, 25741227406155030719, Infinity],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{74., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           ButtonFunction:>FrontEndExecute[{
+              FrontEnd`SetOptions[
+              FrontEnd`$FrontEnd, 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Advanced"}], 
+              FrontEnd`FrontEndToken["PreferencesDialog"]}],
+           Evaluator->None,
+           Method->"Preemptive"]}
+        },
+        AutoDelete->False,
+        FrameStyle->GrayLevel[0.85],
+        GridBoxDividers->{"Columns" -> {False, {True}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {{2}}}]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], 
+         Offset[1.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    BaseStyle->"OutputSizeLimit",
+    FrameMargins->{{12, 12}, {0, 15}},
+    FrameStyle->GrayLevel[0.85],
+    RoundingRadius->5,
+    StripOnInput->False],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  If[25741227406155030719 === $SessionID, 
+   Out[64], Message[
+     MessageName[Syntax, "noinfoker"]]; Missing["NotAvailable"]; 
+   Null]]], "Output",
+ CellChangeTimes->{{3.739786265770824*^9, 3.739786270111937*^9}},
+ CellLabel->"Out[64]=",ExpressionUUID->"a8b4855a-b485-46ec-878c-efc3907fb8e5"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Length", "@", 
+  RowBox[{"StringSplit", "@", 
+   RowBox[{"Get", "[", "%57", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.739786064826337*^9, 3.7397860703132877`*^9}, {
+  3.739786115029023*^9, 3.739786130585071*^9}},
+ CellLabel->"In[61]:=",ExpressionUUID->"db64376d-c5c1-4964-a527-1952cb65ea96"],
+
+Cell[BoxData["202707"], "Input",
+ CellChangeTimes->{{3.739786218774928*^9, 
+  3.739786220329672*^9}},ExpressionUUID->"703c4bf1-ee4d-4d4a-8ca3-\
+21a811e8303d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"toPureText", "[", 
+  RowBox[{"Get", "[", "%57", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.739786221692618*^9, 3.739786228390726*^9}},
+ CellLabel->"In[67]:=",ExpressionUUID->"6fdf541f-1902-467e-a448-28e08c6bec9d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   FrameBox[GridBox[{
+      {
+       ItemBox[
+        TagBox[
+         RowBox[{"\<\"part i chapter i on an exceptionally hot evening early \
+in july a young man came out of the garret in which he lodged in s. place and \
+walked slowly, as though \"\>", 
+          "\[Ellipsis]", "\<\"his passing from one world into another, of his \
+initiation into a new unknown life. that might be the subject of a new story, \
+but our present story is ended. \"\>"}],
+         Short[#, 5]& ],
+        BaseStyle->{Deployed -> False},
+        StripOnInput->False]},
+      {GridBox[{
+         {
+          TagBox[
+           TooltipBox[
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource[
+                "FEStrings", "sizeBriefExplanation"], StandardForm],
+               ImageSizeCache->{58., {2., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLText",
+             StripOnInput->False],
+            StyleBox[
+             DynamicBox[
+              ToBoxes[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
+             False]],
+           Annotation[#, 
+            Style[
+             Dynamic[
+              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+             DynamicUpdating -> True], "Tooltip"]& ], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{50., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 67, 25741227406155030719, 5/2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{56., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 67, 25741227406155030719, 5 2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{42., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 67, 25741227406155030719, Infinity],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{74., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           ButtonFunction:>FrontEndExecute[{
+              FrontEnd`SetOptions[
+              FrontEnd`$FrontEnd, 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Advanced"}], 
+              FrontEnd`FrontEndToken["PreferencesDialog"]}],
+           Evaluator->None,
+           Method->"Preemptive"]}
+        },
+        AutoDelete->False,
+        FrameStyle->GrayLevel[0.85],
+        GridBoxDividers->{"Columns" -> {False, {True}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {{2}}}]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], 
+         Offset[1.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    BaseStyle->"OutputSizeLimit",
+    FrameMargins->{{12, 12}, {0, 15}},
+    FrameStyle->GrayLevel[0.85],
+    RoundingRadius->5,
+    StripOnInput->False],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  If[25741227406155030719 === $SessionID, 
+   Out[67], Message[
+     MessageName[Syntax, "noinfoker"]]; Missing["NotAvailable"]; 
+   Null]]], "Output",
+ CellChangeTimes->{3.7397862305754213`*^9, 3.739786362134112*^9},
+ CellLabel->"Out[67]=",ExpressionUUID->"19d8a5b3-ed6f-43c3-ae26-504d0ab7affb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Length", "@", 
+  RowBox[{"StringSplit", "[", "%67", "]"}]}]], "Input",
+ CellChangeTimes->{{3.739786374128183*^9, 3.739786381088386*^9}},
+ CellLabel->"In[68]:=",ExpressionUUID->"9c431960-741c-4526-9ec3-085fcf425c60"],
+
+Cell[BoxData["204262"], "Output",
+ CellChangeTimes->{3.7397863814704638`*^9},
+ CellLabel->"Out[68]=",ExpressionUUID->"68e44285-6106-4814-8326-310b8ca69775"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Length", "@", 
+  RowBox[{"TextWords", "@", "%67"}]}]], "Input",
+ CellChangeTimes->{{3.739786383357459*^9, 3.7397863934059677`*^9}},
+ CellLabel->"In[69]:=",ExpressionUUID->"170cbe78-820b-4135-8079-248952c009a6"],
+
+Cell[BoxData["204262"], "Output",
+ CellChangeTimes->{3.7397863995396843`*^9},
+ CellLabel->"Out[69]=",ExpressionUUID->"23e28d65-da90-4072-95dd-7822adcaee39"]
+}, Open  ]]
+},
+WindowSize->{808, 699},
+WindowMargins->{{29, Automatic}, {-20, Automatic}},
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 375, 7, 30, "Input",ExpressionUUID->"e1fb6a1e-9e9c-4c18-b0bf-26aeccac1f9b"],
+Cell[958, 31, 17244, 343, 79, "Output",ExpressionUUID->"b71114f8-8ab4-4451-964c-f98985e904a0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18239, 379, 203, 3, 30, "Input",ExpressionUUID->"72d3ce3d-cc73-4d15-a61b-3a7f4f09cdc7"],
+Cell[18445, 384, 8196, 208, 495, "Output",ExpressionUUID->"a8b4855a-b485-46ec-878c-efc3907fb8e5"]
+}, Open  ]],
+Cell[26656, 595, 316, 6, 30, "Input",ExpressionUUID->"db64376d-c5c1-4964-a527-1952cb65ea96"],
+Cell[26975, 603, 158, 3, 30, InheritFromParent,ExpressionUUID->"703c4bf1-ee4d-4d4a-8ca3-21a811e8303d"],
+Cell[CellGroupData[{
+Cell[27158, 610, 240, 4, 30, "Input",ExpressionUUID->"6fdf541f-1902-467e-a448-28e08c6bec9d"],
+Cell[27401, 616, 7774, 202, 159, "Output",ExpressionUUID->"19d8a5b3-ed6f-43c3-ae26-504d0ab7affb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35212, 823, 239, 4, 30, "Input",ExpressionUUID->"9c431960-741c-4526-9ec3-085fcf425c60"],
+Cell[35454, 829, 156, 2, 34, "Output",ExpressionUUID->"68e44285-6106-4814-8326-310b8ca69775"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35647, 836, 234, 4, 30, "Input",ExpressionUUID->"170cbe78-820b-4135-8079-248952c009a6"],
+Cell[35884, 842, 156, 2, 68, "Output",ExpressionUUID->"23e28d65-da90-4072-95dd-7822adcaee39"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

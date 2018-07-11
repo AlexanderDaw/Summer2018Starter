@@ -1,0 +1,1548 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     66748,       1538]
+NotebookOptionsPosition[     62562,       1458]
+NotebookOutlinePosition[     62942,       1475]
+CellTagsIndexPosition[     62899,       1472]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.739574582461338*^9, 
+  3.7395745828813133`*^9}},ExpressionUUID->"07fe4720-ac0c-4d86-86f9-\
+ee7e4ee53edc"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Directory", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.739555864830307*^9, 3.739555867899819*^9}},
+ CellLabel->
+  "In[314]:=",ExpressionUUID->"6f5eaf7c-180a-4154-be60-0ad11c07f1e2"],
+
+Cell[BoxData["\<\"/Users/shanmy/Library/Mathematica/ApplicationData/\
+CCompilerDriver/BuildFolder/Mengyis-MacBook-Pro-41956/Working-Mengyis-MacBook-\
+Pro-41956-2960130944-1\"\>"], "Output",
+ CellChangeTimes->{3.7395558686104403`*^9},
+ CellLabel->
+  "Out[314]=",ExpressionUUID->"6ca7f314-0794-4d51-b4a7-a72c9901414e"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7395562037083817`*^9, 
+  3.739556221332078*^9}},ExpressionUUID->"9479a217-43d0-4177-92a6-\
+8a3bc216e64a"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Information","notfound",
+   "\"Symbol \\!\\(\\*RowBox[{\\\"\\\\\\\"Layers\\\\\\\"\\\"}]\\) not \
+found.\"",2,317,15,25739761278956801721,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.739556206105713*^9, 3.739556208172229*^9}},
+ CellLabel->
+  "During evaluation of \
+In[317]:=",ExpressionUUID->"457cbb9b-9f99-48ec-8f6e-c37d9989eb0e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"nounlist", "=", 
+  RowBox[{"Select", "[", 
+   RowBox[{
+    RowBox[{"WordList", "[", "]"}], ",", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"WordData", "[", 
+        RowBox[{"#", ",", "\"\<PartsOfSpeech\>\""}], "]"}], "[", 
+       RowBox[{"[", "1", "]"}], "]"}], "==", "\"\<Noun\>\""}], "&"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.739575916102817*^9, 3.739576021293301*^9}},
+ CellLabel->
+  "In[502]:=",ExpressionUUID->"8729b66c-3640-4b9c-b02a-6574b76849dd"],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   FrameBox[GridBox[{
+      {
+       ItemBox[
+        TagBox[
+         RowBox[{"{", 
+          
+          RowBox[{"\<\"a\"\>", ",", "\<\"aardvark\"\>", ",", "\<\"abacus\"\>",
+            ",", "\<\"abalone\"\>", ",", "\<\"abandon\"\>", 
+           ",", "\<\"abandonment\"\>", ",", "\<\"abasement\"\>", 
+           ",", "\<\"abashment\"\>", ",", "\<\"abatement\"\>", 
+           ",", "\<\"abattoir\"\>", ",", "\<\"abbe\"\>", 
+           ",", "\<\"abbess\"\>", ",", "\<\"abbey\"\>", ",", "\<\"abbot\"\>", 
+           ",", "\<\"abbreviation\"\>", ",", "\<\"abdication\"\>", ",", 
+           TemplateBox[{"25058"},
+            "OutputSizeLimit`Skeleton"], ",", "\<\"zither\"\>", 
+           ",", "\<\"zloty\"\>", ",", "\<\"zodiac\"\>", ",", "\<\"zombie\"\>",
+            ",", "\<\"zone\"\>", ",", "\<\"zoning\"\>", ",", "\<\"zoo\"\>", 
+           ",", "\<\"zoologist\"\>", ",", "\<\"zoology\"\>", 
+           ",", "\<\"zoom\"\>", ",", "\<\"zoophyte\"\>", 
+           ",", "\<\"zucchini\"\>", ",", "\<\"zwieback\"\>", 
+           ",", "\<\"zydeco\"\>", ",", "\<\"zygote\"\>", 
+           ",", "\<\"zymurgy\"\>"}], "}"}],
+         Short[#, 5]& ],
+        BaseStyle->{Deployed -> False},
+        StripOnInput->False]},
+      {GridBox[{
+         {
+          TagBox[
+           TooltipBox[
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource[
+                "FEStrings", "sizeBriefExplanation"], StandardForm],
+               ImageSizeCache->{58., {2., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLText",
+             StripOnInput->False],
+            StyleBox[
+             DynamicBox[
+              ToBoxes[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
+             False]],
+           Annotation[#, 
+            Style[
+             Dynamic[
+              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+             DynamicUpdating -> True], "Tooltip"]& ], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{50., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{50., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 502, 25739761278956801721, 5/2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{56., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{56., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 502, 25739761278956801721, 5 2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{42., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{42., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 502, 25739761278956801721, Infinity],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{74., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{74., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           ButtonFunction:>FrontEndExecute[{
+              FrontEnd`SetOptions[
+              FrontEnd`$FrontEnd, 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Advanced"}], 
+              FrontEnd`FrontEndToken["PreferencesDialog"]}],
+           Evaluator->None,
+           Method->"Preemptive"]}
+        },
+        AutoDelete->False,
+        FrameStyle->GrayLevel[0.85],
+        GridBoxDividers->{"Columns" -> {False, {True}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {{2}}}]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], 
+         Offset[1.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    BaseStyle->"OutputSizeLimit",
+    FrameMargins->{{12, 12}, {0, 15}},
+    FrameStyle->GrayLevel[0.85],
+    RoundingRadius->5,
+    StripOnInput->False],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  If[25739761278956801721 === $SessionID, 
+   Out[502], Message[
+     MessageName[Syntax, "noinfoker"]]; Missing["NotAvailable"]; 
+   Null]]], "Output",
+ CellChangeTimes->{
+  3.739575926957171*^9, {3.7395759809345627`*^9, 3.739576025477256*^9}},
+ CellLabel->
+  "Out[502]=",ExpressionUUID->"258228dc-21c2-4c61-8147-35e19874f5b7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Flatten", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"WikipediaData", "[", "#", "]"}], "&"}], "/@", 
+    RowBox[{"Take", "[", 
+     RowBox[{"nounlist", ",", 
+      RowBox[{"{", 
+       RowBox[{"18001", ",", "20000"}], "}"}]}], "]"}]}], ",", "2"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.739578852218865*^9, 3.7395790524198723`*^9}, 
+   3.7395790849956636`*^9, {3.739579184183086*^9, 3.739579184683779*^9}, {
+   3.739579223305108*^9, 3.739579223948535*^9}, {3.739579385593626*^9, 
+   3.739579392947991*^9}, {3.7395794239806213`*^9, 3.739579425107683*^9}, {
+   3.739579455386138*^9, 3.7395794575190372`*^9}, {3.7395796638385277`*^9, 
+   3.739579721587377*^9}, {3.7395818483393173`*^9, 3.739581851714651*^9}, {
+   3.739582016422462*^9, 3.73958201670639*^9}, {3.73958251523558*^9, 
+   3.739582517004201*^9}, {3.7395829340473824`*^9, 3.739582936131081*^9}, {
+   3.739583691418158*^9, 3.739583693799304*^9}, {3.739584140520035*^9, 
+   3.7395841430352917`*^9}, {3.739584512279323*^9, 3.7395845157113323`*^9}, {
+   3.739584920238875*^9, 3.739584923298489*^9}, {3.739585373691943*^9, 
+   3.739585378350976*^9}, {3.739585786000492*^9, 3.739585790232561*^9}},
+ CellLabel->
+  "In[624]:=",ExpressionUUID->"1bb8eaf1-967c-4a67-a7f3-e78d0868a2a8"],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   FrameBox[GridBox[{
+      {
+       ItemBox[
+        TagBox[
+         RowBox[{"{", 
+          RowBox[{
+           TemplateBox[{"26516"},
+            "OutputSizeLimit`Skeleton"], ",", 
+           TemplateBox[{"26516"},
+            "OutputSizeLimit`Skeleton"], ",", 
+           RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}], ",", 
+           TemplateBox[{"1994"},
+            "OutputSizeLimit`Skeleton"], ",", 
+           TemplateBox[{"96487"},
+            "OutputSizeLimit`Skeleton"], ",", 
+           TemplateBox[{"7878"},
+            "OutputSizeLimit`Skeleton"], 
+           ",", "\<\"Shelling may refer to:\\nShell (projectile), explosive \
+used in wars\\nSearching for seashells\\nShelling (topology)\\nWheelset \
+deformation, that occur when the wheel has been worn out\"\>"}], "}"}],
+         Short[#, 5]& ],
+        BaseStyle->{Deployed -> False},
+        StripOnInput->False]},
+      {GridBox[{
+         {
+          TagBox[
+           TooltipBox[
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource[
+                "FEStrings", "sizeBriefExplanation"], StandardForm],
+               ImageSizeCache->{58., {2., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLText",
+             StripOnInput->False],
+            StyleBox[
+             DynamicBox[
+              ToBoxes[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
+             False]],
+           Annotation[#, 
+            Style[
+             Dynamic[
+              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+             DynamicUpdating -> True], "Tooltip"]& ], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{50., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 624, 25739761278956801721, 5/2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{56., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{56., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 624, 25739761278956801721, 5 2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{42., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 624, 25739761278956801721, Infinity],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{74., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           ButtonFunction:>FrontEndExecute[{
+              FrontEnd`SetOptions[
+              FrontEnd`$FrontEnd, 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Advanced"}], 
+              FrontEnd`FrontEndToken["PreferencesDialog"]}],
+           Evaluator->None,
+           Method->"Preemptive"]}
+        },
+        AutoDelete->False,
+        FrameStyle->GrayLevel[0.85],
+        GridBoxDividers->{"Columns" -> {False, {True}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {{2}}}]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], 
+         Offset[1.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    BaseStyle->"OutputSizeLimit",
+    FrameMargins->{{12, 12}, {0, 15}},
+    FrameStyle->GrayLevel[0.85],
+    RoundingRadius->5,
+    StripOnInput->False],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  If[25739761278956801721 === $SessionID, 
+   Out[624], Message[
+     MessageName[Syntax, "noinfoker"]]; Missing["NotAvailable"]; 
+   Null]]], "Output",
+ CellChangeTimes->{{3.739579672523815*^9, 3.739579700989985*^9}, 
+   3.739580071949988*^9, 3.739582014721387*^9, 3.739582378315652*^9, 
+   3.7395828905456257`*^9, 3.739583280736644*^9, 3.7395840423810062`*^9, 
+   3.739584477540702*^9, 3.739584860739167*^9, 3.739585269026428*^9, 
+   3.739585722719639*^9, 3.739586133494237*^9},
+ CellLabel->
+  "Out[624]=",ExpressionUUID->"924adfbb-7648-47ad-b616-29e1e099343e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringJoin", "@@", 
+  RowBox[{"DeleteCases", "[", 
+   RowBox[{"%624", ",", "_Missing"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.739580419484264*^9, 3.739580484309259*^9}, {
+  3.7395806234799137`*^9, 3.739580625100624*^9}, {3.739581868380672*^9, 
+  3.739581870674446*^9}, {3.739582410687675*^9, 3.739582421104013*^9}, {
+  3.739582472407078*^9, 3.7395824738734827`*^9}, {3.739582897974908*^9, 
+  3.7395828988350077`*^9}, {3.739583664828895*^9, 3.7395836650274057`*^9}, {
+  3.7395841150473423`*^9, 3.739584115342532*^9}, {3.739584486085125*^9, 
+  3.7395844869257183`*^9}, {3.739584865562364*^9, 3.739584865990312*^9}, {
+  3.73958533162035*^9, 3.739585332905813*^9}, {3.739585730557316*^9, 
+  3.739585731397488*^9}, {3.739586504152866*^9, 3.7395865053211412`*^9}},
+ CellLabel->
+  "In[625]:=",ExpressionUUID->"92fbfc1d-bb8d-4e17-b1bb-4ad2795c9573"],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   FrameBox[GridBox[{
+      {
+       ItemBox[
+        TagBox[
+         TemplateBox[{"19094522"},
+          "OutputSizeLimit`Skeleton"],
+         Short[#, 5]& ],
+        BaseStyle->{Deployed -> False},
+        StripOnInput->False]},
+      {GridBox[{
+         {
+          TagBox[
+           TooltipBox[
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource[
+                "FEStrings", "sizeBriefExplanation"], StandardForm],
+               ImageSizeCache->{58., {2., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLText",
+             StripOnInput->False],
+            StyleBox[
+             DynamicBox[
+              ToBoxes[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
+             False]],
+           Annotation[#, 
+            Style[
+             Dynamic[
+              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+             DynamicUpdating -> True], "Tooltip"]& ], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{50., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 625, 25739761278956801721, 5/2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{56., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 625, 25739761278956801721, 5 2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{42., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{42., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 625, 25739761278956801721, Infinity],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{74., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           ButtonFunction:>FrontEndExecute[{
+              FrontEnd`SetOptions[
+              FrontEnd`$FrontEnd, 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Advanced"}], 
+              FrontEnd`FrontEndToken["PreferencesDialog"]}],
+           Evaluator->None,
+           Method->"Preemptive"]}
+        },
+        AutoDelete->False,
+        FrameStyle->GrayLevel[0.85],
+        GridBoxDividers->{"Columns" -> {False, {True}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {{2}}}]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], 
+         Offset[1.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    BaseStyle->"OutputSizeLimit",
+    FrameMargins->{{12, 12}, {0, 15}},
+    FrameStyle->GrayLevel[0.85],
+    RoundingRadius->5,
+    StripOnInput->False],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  If[25739761278956801721 === $SessionID, 
+   Out[625], Message[
+     MessageName[Syntax, "noinfoker"]]; Missing["NotAvailable"]; 
+   Null]]], "Output",
+ CellChangeTimes->{
+  3.739582423757801*^9, 3.739582476201483*^9, 3.739582900944818*^9, 
+   3.739583668875792*^9, {3.7395841110154657`*^9, 3.73958411777767*^9}, 
+   3.739584490201578*^9, 3.739584868124627*^9, 3.739585335116857*^9, {
+   3.739585727757537*^9, 3.7395857338750668`*^9}, 3.7395865077163*^9},
+ CellLabel->
+  "Out[625]=",ExpressionUUID->"5787aaf0-ea44-4f4b-9e32-53a5e665ef96"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"rawdata", "=", 
+  RowBox[{"Range", "[", "10", "]"}]}]], "Input",
+ CellChangeTimes->{{3.739581780798808*^9, 3.73958178536283*^9}},
+ CellLabel->
+  "In[578]:=",ExpressionUUID->"e9d026ee-53ff-4bea-a8bc-9124aa0c540c"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "2", ",", "3", ",", "4", ",", "5", ",", "6", ",", "7", ",", "8", 
+   ",", "9", ",", "10"}], "}"}]], "Output",
+ CellChangeTimes->{3.739581786139412*^9},
+ CellLabel->
+  "Out[578]=",ExpressionUUID->"fbd2c83d-32d5-4f38-b580-e9a5088b247d"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"rawdata", "[", 
+    RowBox[{"[", "1", "]"}], "]"}], "=", "%575"}], ";"}]], "Input",
+ CellChangeTimes->{{3.739581743477563*^9, 3.739581767719159*^9}},
+ CellLabel->
+  "In[579]:=",ExpressionUUID->"9c35b8da-6611-4ce1-8734-b03915dec812"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"rawdata", "[", 
+    RowBox[{"[", "10", "]"}], "]"}], "=", "%625"}], ";"}]], "Input",
+ CellChangeTimes->{{3.739582440103018*^9, 3.739582448957211*^9}, {
+  3.739582484079299*^9, 3.739582484427479*^9}, {3.739582911099935*^9, 
+  3.739582914138345*^9}, {3.739583674094336*^9, 3.7395836797313957`*^9}, {
+  3.7395841239840517`*^9, 3.739584127904003*^9}, {3.739584495098074*^9, 
+  3.739584497794248*^9}, {3.739584871286153*^9, 3.739584903266473*^9}, {
+  3.739585339246533*^9, 3.739585343774396*^9}, {3.73958574548558*^9, 
+  3.739585764004621*^9}, {3.7395865111230717`*^9, 3.739586516601431*^9}},
+ CellLabel->
+  "In[626]:=",ExpressionUUID->"5f136c65-a87b-4f7d-8327-8b22db74a6d2"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"rawdata", "[", 
+   RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
+  RowBox[{"rawdata", "[", 
+   RowBox[{"[", "2", "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.739581791720338*^9, 3.739581793120336*^9}, {
+  3.73958245806861*^9, 3.739582463518917*^9}},
+ CellLabel->
+  "In[589]:=",ExpressionUUID->"2badbdf1-1632-493e-9ac9-7df7a456f009"],
+
+Cell[BoxData["False"], "Output",
+ CellChangeTimes->{
+  3.739581793930366*^9, {3.73958245566166*^9, 3.739582489934466*^9}},
+ CellLabel->
+  "Out[589]=",ExpressionUUID->"16979178-0511-4b6a-a49b-bed38a949fe7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["rawdata"], "Input",
+ CellChangeTimes->{{3.7395824915240393`*^9, 3.739582493171706*^9}},
+ CellLabel->
+  "In[627]:=",ExpressionUUID->"4ea10fe3-fe2d-4b9c-addb-7c49a1d65335"],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   FrameBox[GridBox[{
+      {
+       ItemBox[
+        TagBox[
+         RowBox[{"{", 
+          RowBox[{
+           TemplateBox[{"23607195"},
+            "OutputSizeLimit`Skeleton"], ",", 
+           TemplateBox[{"21237671"},
+            "OutputSizeLimit`Skeleton"], ",", 
+           TemplateBox[{"21603146"},
+            "OutputSizeLimit`Skeleton"], ",", 
+           TemplateBox[{"22007346"},
+            "OutputSizeLimit`Skeleton"], ",", 
+           TemplateBox[{"20358912"},
+            "OutputSizeLimit`Skeleton"], ",", 
+           TemplateBox[{"21625229"},
+            "OutputSizeLimit`Skeleton"], ",", 
+           TemplateBox[{"23556270"},
+            "OutputSizeLimit`Skeleton"], ",", 
+           TemplateBox[{"22749512"},
+            "OutputSizeLimit`Skeleton"], ",", 
+           TemplateBox[{"22267893"},
+            "OutputSizeLimit`Skeleton"], ",", 
+           TemplateBox[{"19094522"},
+            "OutputSizeLimit`Skeleton"]}], "}"}],
+         Short[#, 5]& ],
+        BaseStyle->{Deployed -> False},
+        StripOnInput->False]},
+      {GridBox[{
+         {
+          TagBox[
+           TooltipBox[
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource[
+                "FEStrings", "sizeBriefExplanation"], StandardForm],
+               ImageSizeCache->{58., {2., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLText",
+             StripOnInput->False],
+            StyleBox[
+             DynamicBox[
+              ToBoxes[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
+             False]],
+           Annotation[#, 
+            Style[
+             Dynamic[
+              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+             DynamicUpdating -> True], "Tooltip"]& ], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{50., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{50., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 627, 25739761278956801721, 5/2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{56., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{56., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 627, 25739761278956801721, 5 2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{42., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{42., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 627, 25739761278956801721, Infinity],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{74., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{74., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           ButtonFunction:>FrontEndExecute[{
+              FrontEnd`SetOptions[
+              FrontEnd`$FrontEnd, 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Advanced"}], 
+              FrontEnd`FrontEndToken["PreferencesDialog"]}],
+           Evaluator->None,
+           Method->"Preemptive"]}
+        },
+        AutoDelete->False,
+        FrameStyle->GrayLevel[0.85],
+        GridBoxDividers->{"Columns" -> {False, {True}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {{2}}}]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], 
+         Offset[1.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    BaseStyle->"OutputSizeLimit",
+    FrameMargins->{{12, 12}, {0, 15}},
+    FrameStyle->GrayLevel[0.85],
+    RoundingRadius->5,
+    StripOnInput->False],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  If[25739761278956801721 === $SessionID, 
+   Out[627], Message[
+     MessageName[Syntax, "noinfoker"]]; Missing["NotAvailable"]; 
+   Null]]], "Output",
+ CellChangeTimes->{
+  3.739582494582511*^9, 3.739582922324996*^9, 3.739583685585101*^9, 
+   3.739584135871831*^9, 3.739584508108809*^9, {3.739584887292007*^9, 
+   3.7395849117769833`*^9}, 3.739585368869598*^9, 3.739585774289935*^9, 
+   3.7395865281184597`*^9},
+ CellLabel->
+  "Out[627]=",ExpressionUUID->"30cd2380-1d01-4c2b-8598-e97b9092cbb2"]
+}, Open  ]],
+
+Cell[BoxData["nounlist"], "Input",
+ CellChangeTimes->{{3.739578579606803*^9, 3.7395785821601057`*^9}},
+ CellLabel->
+  "In[515]:=",ExpressionUUID->"10f265bb-cc12-4674-aded-438942e13052"],
+
+Cell[BoxData[
+ RowBox[{"WordFrequencyData", "[", "\"\<cat\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.739578622067144*^9, 3.7395786398234577`*^9}},
+ CellLabel->
+  "In[518]:=",ExpressionUUID->"3d273ad0-f057-4843-a0b5-2cce12552e91"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"x", "=", "9.132587820272668`*^-6"}]], "Input",
+ CellChangeTimes->{{3.739578645957889*^9, 3.739578646189427*^9}},
+ CellLabel->
+  "In[519]:=",ExpressionUUID->"894f38b2-0a4d-40ef-bbee-735a6500bfdc"],
+
+Cell[BoxData["9.132587820272668`*^-6"], "Output",
+ CellChangeTimes->{3.739578647630567*^9},
+ CellLabel->
+  "Out[519]=",ExpressionUUID->"4b47481a-8519-4423-8dc2-f39af4cc40b6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"WordFrequencyData", "[", "\"\<a\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.739578671132497*^9, 3.739578677979761*^9}},
+ CellLabel->
+  "In[521]:=",ExpressionUUID->"3b0d518d-a7de-4c1e-a638-eb5e7bd32053"],
+
+Cell[BoxData["0.007570979441363708`"], "Output",
+ CellChangeTimes->{3.739578678754591*^9},
+ CellLabel->
+  "Out[521]=",ExpressionUUID->"13b3884b-8463-4024-8b9f-8e274017b6d8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Select", "[", 
+  RowBox[{
+   RowBox[{"Take", "[", 
+    RowBox[{"nounlist", ",", "1000"}], "]"}], ",", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"WordFrequencyData", "[", "#", "]"}], ">=", "x"}], "&"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.739578649129921*^9, 3.739578683274013*^9}, {
+  3.739578815817771*^9, 3.739578821216859*^9}},
+ CellLabel->
+  "In[523]:=",ExpressionUUID->"18fd1b99-d9b4-4a45-895d-b0cd8f811e40"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"a\"\>", ",", "\<\"ability\"\>", ",", "\<\"above\"\>", 
+   ",", "\<\"absence\"\>", ",", "\<\"absolute\"\>", ",", "\<\"absorption\"\>",
+    ",", "\<\"abstract\"\>", ",", "\<\"abuse\"\>", ",", "\<\"academic\"\>", 
+   ",", "\<\"acceptance\"\>", ",", "\<\"access\"\>", ",", "\<\"accident\"\>", 
+   ",", "\<\"accordance\"\>", ",", "\<\"account\"\>", 
+   ",", "\<\"accounting\"\>", ",", "\<\"accuracy\"\>", ",", "\<\"accused\"\>",
+    ",", "\<\"achievement\"\>", ",", "\<\"acid\"\>", 
+   ",", "\<\"acquisition\"\>", ",", "\<\"acres\"\>", ",", "\<\"act\"\>", 
+   ",", "\<\"acting\"\>", ",", "\<\"action\"\>", ",", "\<\"active\"\>", 
+   ",", "\<\"activity\"\>", ",", "\<\"acute\"\>", ",", "\<\"ad\"\>", 
+   ",", "\<\"addition\"\>", ",", "\<\"address\"\>", ",", "\<\"adjustment\"\>",
+    ",", "\<\"administration\"\>", ",", "\<\"adult\"\>", 
+   ",", "\<\"advance\"\>", ",", "\<\"advantage\"\>", 
+   ",", "\<\"advertising\"\>", ",", "\<\"advice\"\>", ",", "\<\"affair\"\>", 
+   ",", "\<\"affairs\"\>", ",", "\<\"affect\"\>", ",", "\<\"affection\"\>", 
+   ",", "\<\"afternoon\"\>", ",", "\<\"age\"\>", ",", "\<\"aged\"\>", 
+   ",", "\<\"agency\"\>", ",", "\<\"agent\"\>", ",", "\<\"agreement\"\>", 
+   ",", "\<\"agriculture\"\>", ",", "\<\"aid\"\>", ",", "\<\"aim\"\>", 
+   ",", "\<\"air\"\>", ",", "\<\"aircraft\"\>", ",", "\<\"alcohol\"\>", 
+   ",", "\<\"alternative\"\>", ",", "\<\"altogether\"\>", 
+   ",", "\<\"amount\"\>", ",", "\<\"analysis\"\>", ",", "\<\"ancient\"\>", 
+   ",", "\<\"anger\"\>", ",", "\<\"angle\"\>", ",", "\<\"animal\"\>", 
+   ",", "\<\"annual\"\>", ",", "\<\"answer\"\>", ",", "\<\"anterior\"\>", 
+   ",", "\<\"anti\"\>", ",", "\<\"anxiety\"\>", ",", "\<\"apartment\"\>", 
+   ",", "\<\"apparatus\"\>", ",", "\<\"appeal\"\>", ",", "\<\"appearance\"\>",
+    ",", "\<\"application\"\>", ",", "\<\"appointment\"\>", 
+   ",", "\<\"approach\"\>", ",", "\<\"approval\"\>", ",", "\<\"arc\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.7395786650876303`*^9, {3.739578807390573*^9, 3.73957882610602*^9}},
+ CellLabel->
+  "Out[523]=",ExpressionUUID->"a2302749-becd-4a83-bf60-ac0b50c2e41c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Length", "[", "%523", "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->
+  "In[524]:=",ExpressionUUID->"ae302d43-0fe3-466e-afc0-fa4781a87ebd"],
+
+Cell[BoxData["75"], "Output",
+ CellChangeTimes->{3.739578833677121*^9},
+ CellLabel->
+  "Out[524]=",ExpressionUUID->"eac22641-91e0-4258-bcc4-4f3144bc5b96"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SortBy", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<dog\>\"", ",", "\"\<abacus\>\"", ",", "\"\<academic\>\"", ",", 
+     "\"\<cat\>\"", ",", "\"\<zoo\>\"", ",", "\"\<abasement\>\""}], "}"}], 
+   ",", "WordFrequencyData"}], "]"}]], "Input",
+ CellChangeTimes->{{3.739576065642714*^9, 3.7395761411479473`*^9}, {
+  3.739576203549547*^9, 3.739576230119072*^9}},
+ CellLabel->
+  "In[512]:=",ExpressionUUID->"b136beae-a770-4ce3-ac10-0b4089bf8c2d"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"abacus\"\>", ",", "\<\"abasement\"\>", ",", "\<\"zoo\"\>", 
+   ",", "\<\"cat\"\>", ",", "\<\"academic\"\>", ",", "\<\"dog\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.739576086324041*^9, 3.739576142591721*^9}, 
+   3.7395762309706984`*^9},
+ CellLabel->
+  "Out[512]=",ExpressionUUID->"216cf894-d090-472d-a260-c00eb72087f2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Reverse", "[", 
+  RowBox[{"{", 
+   RowBox[{
+   "\"\<abacus\>\"", ",", "\"\<abasement\>\"", ",", "\"\<zoo\>\"", ",", 
+    "\"\<cat\>\"", ",", "\"\<academic\>\"", ",", "\"\<dog\>\""}], "}"}], 
+  "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->
+  "In[513]:=",ExpressionUUID->"c984982d-d0fb-4194-ae9e-d65c25c560cd"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"dog\"\>", ",", "\<\"academic\"\>", ",", "\<\"cat\"\>", 
+   ",", "\<\"zoo\"\>", ",", "\<\"abasement\"\>", ",", "\<\"abacus\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.739576233784068*^9},
+ CellLabel->
+  "Out[513]=",ExpressionUUID->"02589b3c-81ed-4579-beb6-a5ddb0fd049e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"WikipediaData", "[", "\"\<Man\>\"", "]"}], "//", 
+  "Timing"}]], "Input",
+ CellChangeTimes->{{3.7395755799872923`*^9, 3.739575616520257*^9}, {
+  3.739575710346118*^9, 3.739575715954872*^9}},
+ CellLabel->
+  "In[497]:=",ExpressionUUID->"3e446ab7-b7f8-4dd9-b2fb-38f4893bb87f"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0.063669`", 
+   ",", "\<\"A man is a male human. The term man is usually reserved for an \
+adult male, with the term boy being the usual term for a male child or \
+adolescent. However, the term man is also sometimes used to identify a male \
+human, regardless of age, as in phrases such as \\\"men's \
+basketball\\\".\\nLike most other male mammals, a man's genome typically \
+inherits an X chromosome from his mother and a Y chromosome from his father. \
+The male fetus produces larger amounts of androgens and smaller amounts of \
+estrogens than a female fetus. This difference in the relative amounts of \
+these sex steroids is largely responsible for the physiological differences \
+that distinguish men from women. During puberty, hormones which stimulate \
+androgen production result in the development of secondary sexual \
+characteristics, thus exhibiting greater differences between the sexes. \
+However, there are exceptions to the above for some transgender and intersex \
+men.\\n\\n\\n== Etymology ==\\n\\nThe English term \\\"man\\\" is derived \
+from a Proto-Indo-European root *man- (see Sanskrit/Avestan manu-, Slavic m\
+\:01eb\[ZHacek] \\\"man, male\\\"). More directly, the word derives from Old \
+English mann. The Old English form had a default meaning of \\\"adult \
+male\\\" (which was the exclusive meaning of wer), though it could also \
+signify a person of unspecified gender. The closely related Old English \
+pronoun man was used just as it is in Modern German to designate \\\"one\\\" \
+(e. g., in the saying man muss mit den W\[ODoubleDot]lfen heulen). The Old \
+English form is derived from Proto-Germanic *mannz, \\\"human being, person\\\
+\", which is also the etymon of German Mann \\\"man, husband\\\" and man \
+\\\"one\\\" (pronoun), Old Norse ma\[Eth]r, and Gothic manna. According to \
+Tacitus, the mythological progenitor of the Germanic tribes was called \
+Mannus. *Manus in Indo-European mythology was the first man, see Mannus, Manu \
+(Hinduism).\\n\\n\\n== Age and terminology ==\\n\\nThe term manhood is used \
+to describe the period in a human male's life after he has transitioned from \
+boyhood, having passed through puberty, usually having attained male \
+secondary sexual characteristics, and symbolises a male's coming of age. The \
+word man is used to mean any adult male. In English-speaking countries, many \
+other words can also be used to mean an adult male such as guy, dude, buddy, \
+bloke, fellow, chap and sometimes boy or lad. The term manhood is associated \
+with masculinity and virility, which refer to male qualities and male gender \
+roles.\\n\\n\\n== Biology and sex ==\\n\\nHumans exhibit sexual dimorphism in \
+many characteristics, many of which have no direct link to reproductive \
+ability, although most of these characteristics do have a role in sexual \
+attraction. Most expressions of sexual dimorphism in humans are found in \
+height, weight, and body structure, though there are always examples that do \
+not follow the overall pattern. For example, men tend to be taller than \
+women, but there are many people of both sexes who are in the mid-height \
+range for the species.\\n\\nSome examples of male secondary sexual \
+characteristics in humans, those acquired as boys become men or even later in \
+life, are:\\nmore pubic hair\\nmore facial hair\\nlarger hands and \
+feet\\nbroader shoulders and chest\\nlarger skull and bone structure\\nlarger \
+brain mass and volume\\ngreater muscle mass\\na more prominent Adam's apple \
+and deeper voice\\ngreater height\\na higher tibia:femur ratio (a longer \
+shinbone in comparison to the thighbone)\\n\\n\\n=== Sexual characteristics \
+===\\nIn mankind, the sex of an individual is generally determined at the \
+time of fertilization by the genetic material carried in the sperm cell. If a \
+sperm cell carrying an X chromosome fertilizes the egg, the offspring will \
+typically be female (XX); if a sperm cell carrying a Y chromosome fertilizes \
+the egg, the offspring will typically be male (XY). Persons whose anatomy or \
+chromosomal makeup differ from this pattern are referred to as \
+intersex.\\nThis is referred to as the XY sex-determination system and is \
+typical of most mammals, but quite a few other sex-determination systems \
+exist, including some that are non-genetic.\\nThe term primary sexual \
+characteristics denotes the kind of gamete the gonad produces: the ovary \
+produces egg cells in the female, and the testis produces sperm cells in the \
+male. The term secondary sexual characteristics denotes all other sexual \
+distinctions that play indirect roles in uniting sperm and eggs. Secondary \
+sexual characteristics include everything from the specialized male and \
+female features of the genital tract, to the brilliant plumage of male birds \
+or facial hair of humans, to behavioral features such as \
+courtship.\\n\\n\\n=== Gender ===\\nBiological factors are not sufficient \
+determinants of whether a person considers themselves a man or is considered \
+a man. Intersex individuals, who have physical or genetic features considered \
+to be mixed or atypical for one sex or the other, may use other criteria in \
+making a clear determination. There are also transgender and transsexual men, \
+who were assigned as female at birth, but identify as men; there are varying \
+social, legal and individual definitions with regard to these issues. (See \
+trans man.)\\n\\n\\n=== Reproductive system ===\\n\\nThe male sex organs are \
+part of the reproductive system, consisting of the penis, testicles, vas \
+deferens, and the prostate gland. The male reproductive system's function is \
+to produce semen which carries sperm and thus genetic information that can \
+unite with an egg within a woman. Since sperm that enters a woman's uterus \
+and then fallopian tubes goes on to fertilize an egg which develops into a \
+fetus or child, the male reproductive system plays no necessary role during \
+the gestation. The concept of fatherhood and family exists in human \
+societies. The study of male reproduction and associated organs is called \
+andrology.\\n\\n\\n=== Sex hormones ===\\nIn mammals, the hormones that \
+influence sexual differentiation and development are androgens (mainly \
+testosterone), which stimulate later development of the ovary. In the \
+sexually undifferentiated embryo, testosterone stimulates the development of \
+the Wolffian ducts, the penis, and closure of the labioscrotal folds into the \
+scrotum. Another significant hormone in sexual differentiation is the Anti-m\
+\[UDoubleDot]llerian hormone, which inhibits development of the \
+M\[UDoubleDot]llerian ducts.\\n\\n\\n=== Illnesses ===\\nIn general, men \
+suffer from many of the same illnesses as women. In comparison to women, men \
+suffer from slightly more illnesses. Male life expectancy is slightly lower \
+than female life expectancy, although the difference has narrowed in recent \
+years.\\nFor males during puberty, testosterone, along with gonadotropins \
+released by the pituitary gland, stimulates spermatogenesis, along with the \
+full sexual distinction of a human male from a human female, while women are \
+acted upon by estrogens and progesterones to produce their sexual distinction \
+from the human male.\\n\\n\\n== Masculinity ==\\n\\nMasculinity has its roots \
+in genetics (see gender). Therefore, while masculinity looks different in \
+different cultures, there are common aspects to its definition across \
+cultures. Sometimes gender scholars will use the phrase \\\"hegemonic \
+masculinity\\\" to distinguish the most dominant form of masculinity from \
+other variants. In the mid-twentieth century United States, for example, John \
+Wayne might embody one form of masculinity, while Albert Einstein might be \
+seen as masculine, but not in the same \\\"hegemonic\\\" \
+fashion.\\nAnthropology has shown that masculinity itself has social status, \
+just like wealth, race and social class. In western culture, for example, \
+greater masculinity usually brings greater social status. Many English words \
+such as virtue and virile (from the Indo-European root vir meaning man) \
+reflect this. An association with physical or moral strength is implied. \
+Masculinity is associated more commonly with adult men than with boys.\\nA \
+great deal is now known about the development of masculine characteristics. \
+The process of sexual differentiation specific to the reproductive system of \
+Homo sapiens produces a female by default. The SRY gene on the Y chromosome, \
+however, interferes with the default process, causing a chain of events that, \
+all things being equal, leads to testes formation, androgen production, and a \
+range of both pre-natal and post-natal hormonal effects covered by the terms \
+masculinization or virilization. Because masculinization redirects biological \
+processes from the default female route, it is more precisely called \
+defeminization.\\nThere is an extensive debate about how children develop \
+gender identities.\\nIn many cultures displaying characteristics not typical \
+to one's gender may become a social problem for the individual. Among men, \
+the exhibition of feminine behavior may be considered a sign of \
+homosexuality, while the same is for a woman who exhibits masculine behavior. \
+Within sociology such labeling and conditioning is known as gender \
+assumptions and is a part of socialization to better match a culture's mores. \
+The corresponding social condemnation of excessive masculinity may be \
+expressed in terms such as \\\"machismo\\\" or \\\"testosterone \
+poisoning.\\\"\\nThe relative importance of the roles of socialization and \
+genetics in the development of masculinity continues to be debated. While \
+social conditioning obviously plays a role, it can also be observed that \
+certain aspects of the masculine identity exist in almost all human cultures.\
+\\nThe historical development of gender role is addressed by such fields as \
+behavioral genetics, evolutionary psychology, human ecology and sociobiology. \
+All human cultures seem to encourage the development of gender roles, through \
+literature, costume and song. Some examples of this might include the epics \
+of Homer, the King Arthur tales in English, the normative commentaries of \
+Confucius or biographical studies of Muhammad. More specialized treatments of \
+masculinity may be found in works such as the Bhagavad Gita or bushido's \
+Hagakure.\\n\\n\\n== Culture and gender roles ==\\n\\nWell into prehistoric \
+culture, men are believed to have assumed a variety of social and cultural \
+roles which are likely similar across many groups of humans. In \
+hunter-gatherer societies, men were often if not exclusively responsible for \
+all large game killed, the capture and raising of most or all domesticated \
+animals, the building of permanent shelters, the defense of villages, and \
+other tasks where the male physique and strong spatial-cognition were most \
+useful. Some anthropologists believe that it may have been men who led the \
+Neolithic Revolution and became the first pre-historical ranchers, as a \
+possible result of their intimate knowledge of animal life.\\nThroughout \
+history, the roles of men have changed greatly. As societies have moved away \
+from agriculture as a primary source of jobs, the emphasis on male physical \
+ability has waned. Traditional gender roles for working men typically \
+involved jobs emphasizing moderate to hard manual labor (see Blue-collar \
+worker), often with no hope for increase in wage or position. For poorer men \
+among the working classes, the need to support their families, especially \
+during periods of industrial change and economic decline, forced them to stay \
+in dangerous jobs working long arduous hours, often without retirement. Many \
+industrialized countries have seen a shift to jobs which are less physically \
+demanding, with a general reduction in the percentage of manual labor needed \
+in the work force (see White-collar worker). The male goal in these \
+circumstances is often of pursuing a quality education and securing a \
+dependable, often office-environment, source of income.\\n\\nThe Men's \
+Movement is in part a struggle for the recognition of equality of opportunity \
+with women, and for equal rights irrespective of gender, even if special \
+relations and conditions are willingly incurred under the form of partnership \
+involved in marriage. The difficulties of obtaining this recognition are due \
+to the habits and customs recent history has produced. Through a combination \
+of economic changes and the efforts of the feminist movement in recent \
+decades, men in some societies now compete with women for jobs that \
+traditionally excluded women. Some larger corporations have instituted \
+tracking systems to try to ensure that jobs are filled based on merit and not \
+just on traditional gender selection. Assumptions and expectations based on \
+sex roles both benefit and harm men in Western society (as they do women, but \
+in different ways) in the workplace as well as on the topics of education, \
+violence, health care, politics, and fatherhood - to name a few. Research has \
+identified anti-male sexism in some areas which can result in what appear to \
+be unfair advantages given to women.\\nThe Parsons model was used to contrast \
+and illustrate extreme positions on gender roles. Model A describes total \
+separation of male and female roles, while Model B describes the complete \
+dissolution of barriers between gender roles. The examples are based on the \
+context of the culture and infrastructure of the United States. However, \
+these extreme positions are rarely found in reality; actual behavior of \
+individuals is usually somewhere between these poles. The most common 'model' \
+followed in real life in the United States and Great Britain is the 'model of \
+double burden'.\\n\\n\\n=== Exclusively male roles ===\\nSome positions and \
+titles are reserved for men only. For example, the position of Pope and \
+Bishop in the Roman Catholic Church. Also the priesthood is exclusively male \
+in the Catholic Church and also some other religious traditions. Men are \
+often given priority for the position of monarch (King in the case of a man) \
+of a country, as it usually passes to the eldest male child upon \
+succession.\\n\\n\\n== See also ==\\n\\nMedical:\\nSex assignment\\nMasculine \
+psychology\\nMen's health\\nGender differences\\nDynamics:\\nMale \
+chauvinism\\nPatriarchy\\nSexism\\nMisandry\\nPolitical:\\nFathers' \
+rights\\nMasculism\\nMen's studies\\nMen's Rights\\n\\n\\n== References ==\\n\
+\\n\\n== Further reading ==\\nAndrew Perchuk, Simon Watney, bell hooks, The \
+Masculine Masquerade: Masculinity and Representation, MIT Press 1995\\nPierre \
+Bourdieu, Masculine Domination, Paperback Edition, Stanford University Press \
+2001\\nRobert W. Connell, Masculinities, Cambridge : Polity Press, \
+1995\\nWarren Farrell, The Myth of Male Power Berkley Trade, 1993 ISBN \
+0-425-18144-8\\nMichael Kimmel (ed.), Robert W. Connell (ed.), Jeff Hearn \
+(ed.), Handbook of Studies on Men and Masculinities, Sage Publications \
+2004\\n\\n\\n== External links ==\\n The dictionary definition of man at \
+Wiktionary\\n Quotations related to Man at Wikiquote\\n Media related to Men \
+at Wikimedia Commons\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.739575593360107*^9, 3.739575617570346*^9}, 
+   3.739575717497959*^9},
+ CellLabel->
+  "Out[497]=",ExpressionUUID->"a6dbc085-65f9-490d-b745-b34a49c160c8"],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{{3.739575406861411*^9, 3.739575454905116*^9}, 
+   3.7395760619011393`*^9, 3.739578545101878*^9},
+ CellLabel->
+  "Out[514]=",ExpressionUUID->"67ed0a79-5f31-47fb-a11b-ac077fb2a667"]
+}, Open  ]]
+},
+WindowSize->{808, 699},
+WindowMargins->{{303, Automatic}, {-14, Automatic}},
+WindowStatusArea->None,
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 154, 3, 30, InheritFromParent,ExpressionUUID->"07fe4720-ac0c-4d86-86f9-ee7e4ee53edc"],
+Cell[CellGroupData[{
+Cell[737, 27, 206, 4, 30, "Input",ExpressionUUID->"6f5eaf7c-180a-4154-be60-0ad11c07f1e2"],
+Cell[946, 33, 316, 5, 56, "Output",ExpressionUUID->"6ca7f314-0794-4d51-b4a7-a72c9901414e"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1299, 43, 154, 3, 26, "Input",ExpressionUUID->"9479a217-43d0-4177-92a6-8a3bc216e64a"],
+Cell[1456, 48, 391, 9, 24, "Message",ExpressionUUID->"457cbb9b-9f99-48ec-8f6e-c37d9989eb0e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1884, 62, 505, 14, 30, "Input",ExpressionUUID->"8729b66c-3640-4b9c-b02a-6574b76849dd"],
+Cell[2392, 78, 8661, 220, 163, "Output",ExpressionUUID->"258228dc-21c2-4c61-8147-35e19874f5b7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11090, 303, 1270, 24, 30, "Input",ExpressionUUID->"1bb8eaf1-967c-4a67-a7f3-e78d0868a2a8"],
+Cell[12363, 329, 8435, 218, 205, "Output",ExpressionUUID->"924adfbb-7648-47ad-b616-29e1e099343e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20835, 552, 869, 14, 30, "Input",ExpressionUUID->"92fbfc1d-bb8d-4e17-b1bb-4ad2795c9573"],
+Cell[21707, 568, 7749, 204, 93, "Output",ExpressionUUID->"5787aaf0-ea44-4f4b-9e32-53a5e665ef96"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29493, 777, 236, 5, 30, "Input",ExpressionUUID->"e9d026ee-53ff-4bea-a8bc-9124aa0c540c"],
+Cell[29732, 784, 286, 7, 34, "Output",ExpressionUUID->"fbd2c83d-32d5-4f38-b580-e9a5088b247d"]
+}, Open  ]],
+Cell[30033, 794, 279, 7, 30, "Input",ExpressionUUID->"9c35b8da-6611-4ce1-8734-b03915dec812"],
+Cell[30315, 803, 717, 13, 30, "Input",ExpressionUUID->"5f136c65-a87b-4f7d-8327-8b22db74a6d2"],
+Cell[CellGroupData[{
+Cell[31057, 820, 369, 9, 30, "Input",ExpressionUUID->"2badbdf1-1632-493e-9ac9-7df7a456f009"],
+Cell[31429, 831, 205, 4, 34, "Output",ExpressionUUID->"16979178-0511-4b6a-a49b-bed38a949fe7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31671, 840, 184, 3, 30, "Input",ExpressionUUID->"4ea10fe3-fe2d-4b9c-addb-7c49a1d65335"],
+Cell[31858, 845, 8661, 227, 155, "Output",ExpressionUUID->"30cd2380-1d01-4c2b-8598-e97b9092cbb2"]
+}, Open  ]],
+Cell[40534, 1075, 185, 3, 30, "Input",ExpressionUUID->"10f265bb-cc12-4674-aded-438942e13052"],
+Cell[40722, 1080, 231, 4, 30, "Input",ExpressionUUID->"3d273ad0-f057-4843-a0b5-2cce12552e91"],
+Cell[CellGroupData[{
+Cell[40978, 1088, 219, 4, 30, InheritFromParent,ExpressionUUID->"894f38b2-0a4d-40ef-bbee-735a6500bfdc"],
+Cell[41200, 1094, 174, 3, 34, "Output",ExpressionUUID->"4b47481a-8519-4423-8dc2-f39af4cc40b6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[41411, 1102, 227, 4, 30, "Input",ExpressionUUID->"3b0d518d-a7de-4c1e-a638-eb5e7bd32053"],
+Cell[41641, 1108, 173, 3, 34, "Output",ExpressionUUID->"13b3884b-8463-4024-8b9f-8e274017b6d8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[41851, 1116, 442, 12, 30, "Input",ExpressionUUID->"18fd1b99-d9b4-4a45-895d-b0cd8f811e40"],
+Cell[42296, 1130, 2142, 33, 182, "Output",ExpressionUUID->"a2302749-becd-4a83-bf60-ac0b50c2e41c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44475, 1168, 166, 4, 30, "Input",ExpressionUUID->"ae302d43-0fe3-466e-afc0-fa4781a87ebd"],
+Cell[44644, 1174, 154, 3, 34, "Output",ExpressionUUID->"eac22641-91e0-4258-bcc4-4f3144bc5b96"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44835, 1182, 476, 11, 30, "Input",ExpressionUUID->"b136beae-a770-4ce3-ac10-0b4089bf8c2d"],
+Cell[45314, 1195, 371, 8, 34, "Output",ExpressionUUID->"216cf894-d090-472d-a260-c00eb72087f2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45722, 1208, 337, 9, 30, "Input",ExpressionUUID->"c984982d-d0fb-4194-ae9e-d65c25c560cd"],
+Cell[46062, 1219, 319, 7, 34, "Output",ExpressionUUID->"02589b3c-81ed-4579-beb6-a5ddb0fd049e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[46418, 1231, 308, 7, 30, "Input",ExpressionUUID->"3e446ab7-b7f8-4dd9-b2fb-38f4893bb87f"],
+Cell[46729, 1240, 15580, 209, 5516, "Output",ExpressionUUID->"a6dbc085-65f9-490d-b745-b34a49c160c8"],
+Cell[62312, 1451, 234, 4, 34, "Output",ExpressionUUID->"67ed0a79-5f31-47fb-a11b-ac077fb2a667"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

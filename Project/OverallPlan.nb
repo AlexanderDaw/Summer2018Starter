@@ -1,0 +1,271 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10021,        263]
+NotebookOptionsPosition[      7330,        207]
+NotebookOutlinePosition[      7684,        223]
+CellTagsIndexPosition[      7641,        220]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Corpus", "Subsubsection",
+ CellChangeTimes->{{3.739490701780056*^9, 
+  3.739490702728839*^9}},ExpressionUUID->"6e007456-37dd-42e3-99d6-\
+4971d9cd200f"],
+
+Cell[CellGroupData[{
+
+Cell["Wikipedia", "Item",
+ CellChangeTimes->{{3.739490784149737*^9, 
+  3.73949078926509*^9}},ExpressionUUID->"97b1d74e-5663-4645-ba16-\
+5a39ac8a124d"],
+
+Cell["Blogs: over 140 million words. XML.", "Item",
+ CellChangeTimes->{{3.7394907916024017`*^9, 3.739490798613763*^9}, {
+  3.739491200232538*^9, 3.739491202308284*^9}, {3.73949278619037*^9, 
+  3.739492789030572*^9}, {3.739558021706574*^9, 
+  3.739558021709321*^9}},ExpressionUUID->"7810bac2-1791-4c24-8294-\
+1d5fd4a574d8"],
+
+Cell["Import. Delete titles, dates, dividers. ", "Item",
+ CellChangeTimes->{{3.7394907916024017`*^9, 3.739490798613763*^9}, {
+  3.739491200232538*^9, 3.739491202308284*^9}, {3.73949278619037*^9, 
+  3.739492789030572*^9}, {3.739558024118013*^9, 
+  3.7395580244694023`*^9}},ExpressionUUID->"e8bd30bb-4407-4fec-98ee-\
+b21982798db2"],
+
+Cell["20000 files run at the same time?", "Item",
+ CellChangeTimes->{{3.7394907916024017`*^9, 3.739490798613763*^9}, {
+  3.739491200232538*^9, 3.739491202308284*^9}, {3.73949278619037*^9, 
+  3.739492789030572*^9}, {3.739558024118013*^9, 
+  3.739558038004918*^9}},ExpressionUUID->"f3132a11-915c-403c-9ac8-\
+d4aa58b52c42"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Pre-processing", "Subsubsection",
+ CellChangeTimes->{{3.7394907192325087`*^9, 
+  3.739490724856637*^9}},ExpressionUUID->"131f2bd5-cb98-4ff4-9b34-\
+6cfff0fd5689"],
+
+Cell[CellGroupData[{
+
+Cell["TextSentences[]", "Item",
+ CellChangeTimes->{
+  3.739491445544341*^9, {3.73949151331151*^9, 
+   3.739491556499796*^9}},ExpressionUUID->"0a8adf05-f03f-4234-9511-\
+41a0945b8206"],
+
+Cell["Group into paragraph of 5 (or 10? or?) sentences", "Item",
+ CellChangeTimes->{
+  3.739491445544341*^9, {3.73949151331151*^9, 3.7394915305494843`*^9}, {
+   3.739491565279582*^9, 
+   3.73949158038944*^9}},ExpressionUUID->"79c6f970-f6f3-4d2f-9e05-\
+153c9c53c414"],
+
+Cell["Or Group into paragraphs of 200 words.", "Item",
+ CellChangeTimes->{
+  3.739491445544341*^9, {3.73949151331151*^9, 3.7394915305494843`*^9}, {
+   3.739491565279582*^9, 3.739491610189653*^9}, {3.739557986684108*^9, 
+   3.739557986687325*^9}, {3.7395582950237637`*^9, 
+   3.73955829585321*^9}},ExpressionUUID->"43f2be31-0857-4ed9-8296-\
+831c59ad2bd3"],
+
+Cell["Map rare words to common words. (blogs > wiki)", "Item",
+ CellChangeTimes->{
+  3.739491445544341*^9, {3.73949151331151*^9, 3.7394915305494843`*^9}, {
+   3.739491565279582*^9, 3.739491610189653*^9}, {3.739557987440868*^9, 
+   3.739558009694191*^9}},ExpressionUUID->"25a5768c-ba2f-43b2-893e-\
+a26aee05f232"],
+
+Cell["\<\
+Only consider \[OpenCurlyDoubleQuote].,:\[CloseCurlyDoubleQuote] Change \
+\[OpenCurlyDoubleQuote]?!\[CloseCurlyDoubleQuote] into \
+\[OpenCurlyDoubleQuote].\[CloseCurlyDoubleQuote], change \
+\[OpenCurlyDoubleQuote];\[CloseCurlyDoubleQuote] into \
+\[OpenCurlyDoubleQuote],\[CloseCurlyDoubleQuote].\
+\>", "Item",
+ CellChangeTimes->{
+  3.739491445544341*^9, {3.73949151331151*^9, 3.7394915305494843`*^9}, {
+   3.739491565279582*^9, 3.739491662260992*^9}, {3.739492802940255*^9, 
+   3.739492802940482*^9}, {3.739557848396669*^9, 3.739557851692997*^9}, {
+   3.739558389284781*^9, 
+   3.739558392670774*^9}},ExpressionUUID->"d3021033-969a-4293-995f-\
+4935d39c7044"],
+
+Cell["Remove all punctuations while keeping white spaces.", "Item",
+ CellChangeTimes->{
+  3.739491445544341*^9, {3.73949151331151*^9, 3.7394915305494843`*^9}, {
+   3.739491565279582*^9, 3.739491662260992*^9}, {3.739492803698807*^9, 
+   3.739492819617012*^9}},ExpressionUUID->"d7fc2c4e-b622-4c98-a3cd-\
+5d29d0bec0b1"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Build \[OpenCurlyDoubleQuote]Association\[CloseCurlyDoubleQuote]", \
+"Subsubsection",
+ CellChangeTimes->{{3.739490733700842*^9, 
+  3.7394907375632877`*^9}},ExpressionUUID->"94788428-e2c8-479d-bb5c-\
+945b4a2e3ad5"],
+
+Cell[CellGroupData[{
+
+Cell["NoPunctuation -> OriginalText", "Item",
+ CellChangeTimes->{{3.739494101373281*^9, 
+  3.739494121743507*^9}},ExpressionUUID->"42c7cf1d-62bf-4cf5-b4fb-\
+d0eabe9a59ae"],
+
+Cell["NoPunctuation -> LocationOfPunc", "Item",
+ CellChangeTimes->{{3.739494101373281*^9, 3.739494133105255*^9}, {
+  3.7395578271916237`*^9, 
+  3.739557827192356*^9}},ExpressionUUID->"ee060976-7802-4b2f-ae3b-\
+bbf3d49c3b2f"],
+
+Cell["\<\
+NoPunctuation -> \[OpenCurlyDoubleQuote]tagging\[CloseCurlyDoubleQuote], tag \
+every word in the input sequence with one of four tags: {NONE, COLON, COMMA, \
+PERIOD}. \[OpenCurlyDoubleQuote]Class\[CloseCurlyDoubleQuote] decoder.\
+\>", "Item",
+ CellChangeTimes->{{3.739494101373281*^9, 3.739494133105255*^9}, {
+  3.739557831170596*^9, 3.739557855330595*^9}, {3.73955878206415*^9, 
+  3.739558785948207*^9}},ExpressionUUID->"2603e013-1c68-4cc9-b823-\
+6e51ea0dfbaf"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Train Neural Network", "Subsubsection",
+ CellChangeTimes->{{3.739490745320746*^9, 
+  3.739490753219096*^9}},ExpressionUUID->"8dffc1e2-931e-4fb3-95e1-\
+3fd678188020"],
+
+Cell[CellGroupData[{
+
+Cell["Still confusing about NetEncoder and NetDecoder...", "Item",
+ CellChangeTimes->{{3.739492705874167*^9, 3.7394927103077602`*^9}, {
+  3.739492740584773*^9, 
+  3.73949277589865*^9}},ExpressionUUID->"aae3de27-1331-4386-b41f-\
+6c7eb44c2cab"],
+
+Cell["\<\
+Try combination of different layers? LSTM. SequenceAttention. Else?\
+\>", "Item",
+ CellChangeTimes->{{3.739492705874167*^9, 3.7394927103077602`*^9}, {
+  3.739492742987804*^9, 3.739492753642461*^9}, {3.739556625327755*^9, 
+  3.739556625328513*^9}, {3.739558526284266*^9, 3.739558557940881*^9}, {
+  3.739558636867627*^9, 
+  3.739558680671075*^9}},ExpressionUUID->"a1d3c85a-56a2-4319-a0ca-\
+032ac2cf9521"],
+
+Cell["Part-of-speech tags and how to use that in the training.", "Item",
+ CellChangeTimes->{{3.739492705874167*^9, 3.7394927103077602`*^9}, {
+   3.739492742987804*^9, 3.739492753642461*^9}, 3.739556625722477*^9, {
+   3.739558685263484*^9, 
+   3.739558705260107*^9}},ExpressionUUID->"4a408817-6e90-4f51-9203-\
+725f3c1bdf3c"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Test", "Subsubsection",
+ CellChangeTimes->{{3.739490761025216*^9, 
+  3.73949076166383*^9}},ExpressionUUID->"f3946243-39ac-4f93-be43-\
+597f1225e6ae"],
+
+Cell[CellGroupData[{
+
+Cell["Leave part of the original data set as testing data.", "Item",
+ CellChangeTimes->{{3.7395590831423073`*^9, 
+  3.739559095002787*^9}},ExpressionUUID->"3d98efc1-94e3-4b75-a3d8-\
+fb891f3a84dd"],
+
+Cell["precision, recall, and their harmonic mean", "Item",
+ CellChangeTimes->{{3.739494153577915*^9, 3.7394941636527023`*^9}, {
+  3.73955741011425*^9, 
+  3.7395574247696543`*^9}},ExpressionUUID->"3b49dfc8-f666-4b53-97b0-\
+e6f93edcf622"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 699},
+WindowMargins->{{91, Automatic}, {31, Automatic}},
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 157, 3, 45, "Subsubsection",ExpressionUUID->"6e007456-37dd-42e3-99d6-4971d9cd200f"],
+Cell[CellGroupData[{
+Cell[762, 29, 150, 3, 32, "Item",ExpressionUUID->"97b1d74e-5663-4645-ba16-5a39ac8a124d"],
+Cell[915, 34, 322, 5, 32, "Item",ExpressionUUID->"7810bac2-1791-4c24-8294-1d5fd4a574d8"],
+Cell[1240, 41, 329, 5, 32, "Item",ExpressionUUID->"e8bd30bb-4407-4fec-98ee-b21982798db2"],
+Cell[1572, 48, 320, 5, 32, "Item",ExpressionUUID->"f3132a11-915c-403c-9ac8-d4aa58b52c42"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1941, 59, 167, 3, 45, "Subsubsection",ExpressionUUID->"131f2bd5-cb98-4ff4-9b34-6cfff0fd5689"],
+Cell[CellGroupData[{
+Cell[2133, 66, 182, 4, 32, "Item",ExpressionUUID->"0a8adf05-f03f-4234-9511-41a0945b8206"],
+Cell[2318, 72, 266, 5, 32, "Item",ExpressionUUID->"79c6f970-f6f3-4d2f-9e05-153c9c53c414"],
+Cell[2587, 79, 354, 6, 32, "Item",ExpressionUUID->"43f2be31-0857-4ed9-8296-831c59ad2bd3"],
+Cell[2944, 87, 311, 5, 32, "Item",ExpressionUUID->"25a5768c-ba2f-43b2-893e-a26aee05f232"],
+Cell[3258, 94, 668, 13, 32, "Item",ExpressionUUID->"d3021033-969a-4293-995f-4935d39c7044"],
+Cell[3929, 109, 316, 5, 32, "Item",ExpressionUUID->"d7fc2c4e-b622-4c98-a3cd-5d29d0bec0b1"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4294, 120, 219, 4, 45, "Subsubsection",ExpressionUUID->"94788428-e2c8-479d-bb5c-945b4a2e3ad5"],
+Cell[CellGroupData[{
+Cell[4538, 128, 171, 3, 32, "Item",ExpressionUUID->"42c7cf1d-62bf-4cf5-b4fb-d0eabe9a59ae"],
+Cell[4712, 133, 224, 4, 32, "Item",ExpressionUUID->"ee060976-7802-4b2f-ae3b-bbf3d49c3b2f"],
+Cell[4939, 139, 472, 8, 53, "Item",ExpressionUUID->"2603e013-1c68-4cc9-b823-6e51ea0dfbaf"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5460, 153, 171, 3, 45, "Subsubsection",ExpressionUUID->"8dffc1e2-931e-4fb3-95e1-3fd678188020"],
+Cell[CellGroupData[{
+Cell[5656, 160, 242, 4, 32, "Item",ExpressionUUID->"aae3de27-1331-4386-b41f-6c7eb44c2cab"],
+Cell[5901, 166, 412, 8, 32, "Item",ExpressionUUID->"a1d3c85a-56a2-4319-a0ca-032ac2cf9521"],
+Cell[6316, 176, 323, 5, 32, "Item",ExpressionUUID->"4a408817-6e90-4f51-9203-725f3c1bdf3c"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6688, 187, 154, 3, 45, "Subsubsection",ExpressionUUID->"f3946243-39ac-4f93-be43-597f1225e6ae"],
+Cell[CellGroupData[{
+Cell[6867, 194, 196, 3, 32, "Item",ExpressionUUID->"3d98efc1-94e3-4b75-a3d8-fb891f3a84dd"],
+Cell[7066, 199, 236, 4, 32, "Item",ExpressionUUID->"3b49dfc8-f666-4b53-97b0-e6f93edcf622"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
